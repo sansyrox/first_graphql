@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
  
-const accessToken = '6fdb9953ca4dfea1a1ad56905156572d4de2a9a0';
+const accessToken = 'afeaf292d7612504dc403ba6136a4cbdc0393d3c';
 const query = `
 query { 
   viewer {
