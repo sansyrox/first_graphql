@@ -3,14 +3,21 @@ const fetch = require('node-fetch');
 const accessToken = 'afeaf292d7612504dc403ba6136a4cbdc0393d3c';
 const query = `
 query { 
-  viewer {
-    repositories(first:5) {
-      edges {
-        node {
+  organization(login:"freeCodeCamp"){
+		members(first:10){
+      edges{
+        node{
           name
         }
       }
     }
+    ,repositories(first:5) {
+	  edges {
+	    node {
+	      name
+	    }
+	  }
+	}
   }
 }
  `;
